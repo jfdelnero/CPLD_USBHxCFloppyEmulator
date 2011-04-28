@@ -1,0 +1,26 @@
+Atmel Pof2jed  Version 4.45 Jan 10 2005
+Copyright 1998 Atmel Corporation. All Rights Reserved.
+
+  EPM7128SLC84-15 --> 1508asPLCC84
+Input file                : C:\HxCFloppyEmu_CPLD_EPM7128S_250308.pof
+Output file               : C:\HxCFloppyEmu_CPLD_ATF1508AS_250308.jed
+Conversion Report file    : C:\HxCFloppyEmu_CPLD_ATF1508AS_250308.txt
+
+Conversion is completed
+
+Options :  (1508 only)
+   Powerdown :		OFF
+   Security Bit :	AUTO
+   Slew Rate :		AUTO
+   PinClk :		OFF
+   Race Coverage :	ON
+   Pin Keeper :		OFF
+   Macrocell Low Power:	AUTO
+   Power Reset :	ALWAYS
+   ITD on GCLK1 :	ON
+   ITD on GCLK2 :	ON
+   ITD on GCLK3 :	ON
+   Open Collector :	AUTO
+   JTAG mode :		AUTO
+   TDI Pullup :		ON
+   TMS Pullup :		ON

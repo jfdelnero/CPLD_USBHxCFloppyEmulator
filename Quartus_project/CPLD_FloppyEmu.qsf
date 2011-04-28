@@ -1,0 +1,203 @@
+# Copyright (C) 1991-2004 Altera Corporation
+# Any  megafunction  design,  and related netlist (encrypted  or  decrypted),
+# support information,  device programming or simulation file,  and any other
+# associated  documentation or information  provided by  Altera  or a partner
+# under  Altera's   Megafunction   Partnership   Program  may  be  used  only
+# to program  PLD  devices (but not masked  PLD  devices) from  Altera.   Any
+# other  use  of such  megafunction  design,  netlist,  support  information,
+# device programming or simulation file,  or any other  related documentation
+# or information  is prohibited  for  any  other purpose,  including, but not
+# limited to  modification,  reverse engineering,  de-compiling, or use  with
+# any other  silicon devices,  unless such use is  explicitly  licensed under
+# a separate agreement with  Altera  or a megafunction partner.  Title to the
+# intellectual property,  including patents,  copyrights,  trademarks,  trade
+# secrets,  or maskworks,  embodied in any such megafunction design, netlist,
+# support  information,  device programming or simulation file,  or any other
+# related documentation or information provided by  Altera  or a megafunction
+# partner, remains with Altera, the megafunction partner, or their respective
+# licensors. No other licenses, including any licenses needed under any third
+# party's intellectual property, are provided herein.
+
+
+# The default values for assignments are stored in the file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+# Project-Wide Assignments
+# ========================
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "4.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:15:12  APRIL 12, 2006"
+set_global_assignment -name LAST_QUARTUS_VERSION 7.2
+
+# Pin & Location Assignments
+# ==========================
+set_location_assignment PIN_58 -to FLOPPY_TRK00
+set_location_assignment PIN_61 -to FLOPPY_WPT
+set_location_assignment PIN_60 -to FLOPPY_DATA
+set_location_assignment PIN_73 -to FTDI_DATA[0]
+set_location_assignment PIN_75 -to FTDI_DATA[1]
+set_location_assignment PIN_76 -to FTDI_DATA[2]
+set_location_assignment PIN_81 -to FTDI_DATA[3]
+set_location_assignment PIN_74 -to FTDI_DATA[4]
+set_location_assignment PIN_79 -to FTDI_DATA[5]
+set_location_assignment PIN_80 -to FTDI_DATA[6]
+set_location_assignment PIN_77 -to FTDI_DATA[7]
+set_location_assignment PIN_4 -to FTDI_RD_not
+set_location_assignment PIN_5 -to FTDI_WR
+set_location_assignment PIN_69 -to FTDI_TXE_not
+set_location_assignment PIN_70 -to FTDI_RXF_not
+set_location_assignment PIN_50 -to FLOPPY_INDEX
+set_location_assignment PIN_48 -to FLOPPY_DSKCHG
+set_location_assignment PIN_65 -to FLOPPY_READY
+set_location_assignment PIN_37 -to SRAM_DATA[0]
+set_location_assignment PIN_39 -to SRAM_DATA[1]
+set_location_assignment PIN_44 -to SRAM_DATA[2]
+set_location_assignment PIN_45 -to SRAM_DATA[3]
+set_location_assignment PIN_41 -to SRAM_DATA[4]
+set_location_assignment PIN_40 -to SRAM_DATA[5]
+set_location_assignment PIN_35 -to SRAM_DATA[6]
+set_location_assignment PIN_33 -to SRAM_DATA[7]
+set_location_assignment PIN_36 -to SRAM_ADDR[0]
+set_location_assignment PIN_34 -to SRAM_ADDR[1]
+set_location_assignment PIN_30 -to SRAM_ADDR[2]
+set_location_assignment PIN_28 -to SRAM_ADDR[3]
+set_location_assignment PIN_24 -to SRAM_ADDR[4]
+set_location_assignment PIN_22 -to SRAM_ADDR[5]
+set_location_assignment PIN_21 -to SRAM_ADDR[6]
+set_location_assignment PIN_17 -to SRAM_ADDR[7]
+set_location_assignment PIN_18 -to SRAM_ADDR[8]
+set_location_assignment PIN_20 -to SRAM_ADDR[9]
+set_location_assignment PIN_29 -to SRAM_ADDR[10]
+set_location_assignment PIN_25 -to SRAM_ADDR[11]
+set_location_assignment PIN_15 -to SRAM_ADDR[12]
+set_location_assignment PIN_12 -to SRAM_WRITE_not
+set_location_assignment PIN_27 -to SRAM_READ_not
+
+# Timing Assignments
+# ==================
+set_global_assignment -name INCLUDE_EXTERNAL_PIN_DELAYS_IN_FMAX_CALCULATIONS OFF
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name AUTO_RESOURCE_SHARING ON
+set_global_assignment -name AUTO_OPEN_DRAIN_PINS ON
+set_global_assignment -name MAX7000_OPTIMIZATION_TECHNIQUE AREA
+set_global_assignment -name MAX_AUTO_GLOBAL_REGISTER_CONTROLS ON
+set_global_assignment -name AUTO_GLOBAL_OE_MAX ON
+set_global_assignment -name REMOVE_REDUNDANT_LOGIC_CELLS OFF
+set_global_assignment -name STATE_MACHINE_PROCESSING AUTO
+set_global_assignment -name FAMILY MAX7000S
+set_global_assignment -name DEVICE_FILTER_PACKAGE PLCC
+set_global_assignment -name SAVE_DISK_SPACE OFF
+set_global_assignment -name SMART_RECOMPILE OFF
+set_global_assignment -name ENABLE_IP_DEBUG OFF
+set_global_assignment -name TOP_LEVEL_ENTITY HxCFloppyEmu
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name OPTIMIZE_TIMING "NORMAL COMPILATION"
+set_global_assignment -name OPTIMIZE_HOLD_TIMING OFF
+set_global_assignment -name DEVICE "EPM7128SLC84-15"
+
+# Simulator Assignments
+# =====================
+set_global_assignment -name GLITCH_DETECTION OFF
+set_global_assignment -name SETUP_HOLD_DETECTION ON
+set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS OFF
+set_global_assignment -name SIMULATION_MODE TIMING
+set_global_assignment -name END_TIME "100 us"
+set_global_assignment -name VECTOR_INPUT_SOURCE CPLD_FloppyEmu.vwf
+
+# LogicLock Region Assignments
+# ============================
+set_global_assignment -name LOGICLOCK_INCREMENTAL_COMPILE_ASSIGNMENT OFF
+
+# ---------------------
+# start CLOCK(CLOCK32M)
+
+	# Timing Assignments
+	# ==================
+set_global_assignment -name FMAX_REQUIREMENT "16 MHz" -section_id CLOCK32M
+set_global_assignment -name DUTY_CYCLE 50 -section_id CLOCK32M
+
+# end CLOCK(CLOCK32M)
+# -------------------
+
+# ----------------------------
+# start CLOCK(FLOPPY_STEP_not)
+
+	# Timing Assignments
+	# ==================
+
+# end CLOCK(FLOPPY_STEP_not)
+# --------------------------
+
+# ----------------------------
+# start ENTITY(CPLD_FloppyEmu)
+
+	# Timing Assignments
+	# ==================
+
+# end ENTITY(CPLD_FloppyEmu)
+# --------------------------
+
+set_global_assignment -name HDL_MESSAGE_LEVEL LEVEL3
+set_location_assignment PIN_57 -to FLOPPY_DIR
+set_location_assignment PIN_63 -to FLOPPY_SIDE
+set_location_assignment PIN_56 -to FLOPPY_STEP
+set_location_assignment PIN_16 -to SRAM_ADDR[13]
+set_location_assignment PIN_11 -to SRAM_ADDR[14]
+set_location_assignment PIN_10 -to LED1_not
+set_location_assignment PIN_9 -to LED2_not
+set_location_assignment PIN_8 -to LED3_not
+set_location_assignment PIN_31 -to SRAM_CS_not
+set_location_assignment PIN_49 -to FLOPPY_DS0
+set_location_assignment PIN_55 -to FLOPPY_DS1
+set_location_assignment PIN_51 -to FLOPPY_DS2
+set_location_assignment PIN_54 -to FLOPPY_MTRON
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name STRATIXII_OPTIMIZATION_TECHNIQUE AREA
+set_global_assignment -name CYCLONE_OPTIMIZATION_TECHNIQUE AREA
+set_global_assignment -name STRATIX_OPTIMIZATION_TECHNIQUE AREA
+set_global_assignment -name MAXII_OPTIMIZATION_TECHNIQUE AREA
+set_global_assignment -name APEX20K_OPTIMIZATION_TECHNIQUE AREA
+set_global_assignment -name AUTO_PARALLEL_EXPANDERS ON
+set_global_assignment -name IGNORE_LCELL_BUFFERS ON
+set_global_assignment -name IGNORE_CASCADE_BUFFERS ON
+set_global_assignment -name VHDL_FILE ../rtl/vhdl/ClockGenerator.vhd
+set_global_assignment -name VHDL_FILE ../rtl/vhdl/ControlCore.vhd
+set_global_assignment -name VHDL_FILE ../rtl/vhdl/HeadShifter.vhd
+set_global_assignment -name VHDL_FILE ../rtl/vhdl/HxCFloppyEmu.vhd
+set_global_assignment -name VHDL_FILE ../rtl/vhdl/Latch4.vhd
+set_global_assignment -name VHDL_FILE ../rtl/vhdl/PulseGenerator.vhd
+set_global_assignment -name VHDL_FILE ../rtl/vhdl/Shifter.vhd
+set_global_assignment -name VHDL_FILE ../rtl/vhdl/TrackCore.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPLD_FloppyEmu.vwf
+set_global_assignment -name TPD_REQUIREMENT "40 ns"
+set_global_assignment -name TSU_REQUIREMENT "27 ns"
+set_global_assignment -name TCO_REQUIREMENT "27 ns"
+set_global_assignment -name TH_REQUIREMENT "27 ns"
+set_instance_assignment -name TSU_REQUIREMENT "62 ns" -from FLOPPY_DIR -to *
+set_instance_assignment -name TSU_REQUIREMENT "62 ns" -from FLOPPY_DS0 -to *
+set_instance_assignment -name TSU_REQUIREMENT "62 ns" -from FLOPPY_DS1 -to *
+set_instance_assignment -name TSU_REQUIREMENT "62 ns" -from FLOPPY_DS2 -to *
+set_instance_assignment -name TSU_REQUIREMENT "62 ns" -from FLOPPY_MTRON -to *
+set_instance_assignment -name TSU_REQUIREMENT "62 ns" -from FLOPPY_SIDE -to *
+set_instance_assignment -name TSU_REQUIREMENT "62 ns" -from FLOPPY_STEP -to *
+set_instance_assignment -name TCO_REQUIREMENT "62 ns" -from * -to FLOPPY_DATA
+set_instance_assignment -name TCO_REQUIREMENT "62 ns" -from * -to FLOPPY_DSKCHG
+set_instance_assignment -name TCO_REQUIREMENT "62 ns" -from * -to FLOPPY_INDEX
+set_instance_assignment -name TCO_REQUIREMENT "62 ns" -from * -to FLOPPY_READY
+set_instance_assignment -name TCO_REQUIREMENT "62 ns" -from * -to FLOPPY_TRK00
+set_instance_assignment -name TCO_REQUIREMENT "62 ns" -from * -to FLOPPY_WPT
+set_instance_assignment -name TCO_REQUIREMENT "62 ns" -from * -to LED1_not
+set_instance_assignment -name TCO_REQUIREMENT "62 ns" -from * -to LED2_not
+set_instance_assignment -name TCO_REQUIREMENT "62 ns" -from * -to LED3_not
+set_global_assignment -name SAFE_STATE_MACHINE ON
+set_location_assignment PIN_83 -to clock
+set_instance_assignment -name CLOCK_SETTINGS CLOCK32M -to clock
+set_location_assignment PIN_1 -to reset_not
